@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course Home Page</title>
+  <meta name="description" content="Course home page for WDD231" />
+  <meta name="author" content="Wirjosentono Mi-ann" />
+
+  <!-- Google Fonts example -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <!-- JavaScript -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    <h1>WDD231</h1>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.svg" alt="Site Logo" class="logo" />
+      <span>Your Name</span>
+      <button id="menuToggle" aria-label="Toggle navigation menu">&#9776;</button>
+    </div>
+    <nav id="navMenu" class="nav-menu">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="chamber.html">Chamber</a>
+      <a href="final.html">Final</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section>
+      <h2>About the Course</h2>
+      <p>This course covers HTML, CSS, JavaScript, and responsive web design.</p>
+    </section>
+
+    <section id="certificate-section">
+      <h2>Certificate Courses</h2>
+      <div id="course-filters">
+        <button data-filter="all">All Courses</button>
+        <button data-filter="WDD">WDD Courses</button>
+        <button data-filter="CSE">CSE Courses</button>
+      </div>
+      <div id="course-list"></div>
+      <p id="credits-total"></p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>You can reach me via the social links below.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <span>© <span id="currentYear"></span> Your Name, Suriname</span>
+    </p>
+    <p id="lastModified">Last Modified: </p>
+    <p class="social-links">
+      <a href="https://github.com/yourgithubusername" target="_blank" rel="noopener noreferrer">GitHub</a> |
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+  </footer>
 </body>
 </html>
