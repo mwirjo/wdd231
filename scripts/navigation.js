@@ -1,12 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.getElementById('menuToggle');
-  const navMenu = document.getElementById('navMenu');
+// scripts/navigation.js
 
-  menuToggle.addEventListener('click', () => {
-    if (navMenu.style.display === 'flex') {
-      navMenu.style.display = 'none';
-    } else {
-      navMenu.style.display = 'flex';
-    }
-  });
+// Optional: Add hamburger toggle if required later
+// Currently not shown in your screenshot layout, but here's a simple handler:
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector("nav");
+
+  if (hamburger && nav) {
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  }
 });

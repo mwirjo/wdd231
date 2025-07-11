@@ -1,19 +1,38 @@
-@media (min-width: 600px) {
-  #menuToggle {
-    display: none;
-  }
-  
-  .nav-menu {
-    display: flex !important;
+/* styles/larger.css */
+
+@media (min-width: 768px) {
+  nav {
     flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 1rem;
   }
 
-  header {
-    padding: 1rem 3rem;
+  .filters {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
-  main {
-    max-width: 900px;
+  .course-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .course-cards .card {
+    width: 30%;
+  }
+
+  header,
+  footer {
+    text-align: center;
+  }
+
+  .student-photo img {
+    max-width: 100%;
   }
 }
