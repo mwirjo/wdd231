@@ -3,7 +3,7 @@
 @media (min-width: 768px) {
   nav {
     flex-direction: row;
-    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
   }
 
   .about-grid {
@@ -35,4 +35,8 @@
   .student-photo img {
     max-width: 100%;
   }
+}
+.ho2 {
+  background-color:var(--main-color);
+  color: white;
 }
