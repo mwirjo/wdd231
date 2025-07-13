@@ -29,7 +29,7 @@ const courses = [
     certificate: 'Web and Computer Programming',
     description: 'Students write programs with functions to solve problems...',
     technology: ['Python'],
-    completed: false
+    completed: true
   },
   {
     subject: 'CSE',
@@ -39,7 +39,7 @@ const courses = [
     certificate: 'Web and Computer Programming',
     description: 'Introduces the notion of classes, encapsulation, inheritance...',
     technology: ['C#'],
-    completed: false
+    completed: true
   },
   {
     subject: 'WDD',
@@ -49,7 +49,7 @@ const courses = [
     certificate: 'Web and Computer Programming',
     description: 'Students create dynamic websites using JavaScript...',
     technology: ['HTML', 'CSS', 'JavaScript'],
-    completed: false
+    completed: true
   },
   {
     subject: 'WDD',
