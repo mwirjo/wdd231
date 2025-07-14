@@ -30,54 +30,39 @@
   <script src="scripts/courses.js" defer></script>
 </head>
 <body style="min-height:100vh; min-width:320px;">
-  <header style="min-height:200px;">
-    <div class="branding" style="display:flex; align-items:center; gap:0.5rem;">
-      <img 
-        src="images/logo.webp" 
-        alt="Site Logo" 
-        class="logo" 
-        width="150" 
-        height="150" 
-        fetchpriority="high"
-        style="width:150px; height:150px;"
-      >
-      <span>Wirjosentono Mi-ann</span>
+
+  <header>
+    <div class="branding">
+      <img src="images/logo.webp" alt="Site Logo" class="logo" width="50" height="50" />
+      <span class="site-name">Wirjosentono Mi-ann</span>
+      <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
     </div>
+    <nav id="main-nav" class="hide">
+        <a href="#">Home</a>
+        <a href="#">Chamber Project</a>
+        <a href="#">Final Project</a>
+    </nav>
   </header>
 
-  <nav style="min-height:120px;">
-    <a href="#">Home</a>
-    <a href="#">Chamber Project</a>
-    <a href="#">Final Project</a>
-  </nav>
-
-  <main style="min-height:800px;">
+  <main>
     <h1>Home</h1>
 
     <section class="about-grid">
-      <div class="about-me" style="min-height:200px;">
+      <div class="about-me">
         <h2>About Me</h2>
-        <p>
-          Hi! My name's Mi-ann Wirjosentono. I am from Wanica, a city in Suriname.
-          I enjoy playing piano, writing, building things and dancing. I also like playing Brawl Stars.
-        </p>
+        <p>Hi everyone! My name is Wirjosentono Mi-ann. Im from Suriname and Im 20 years old. I realy like coding, gaming, writing sttories and poetry and swimming. I love chocolate and gummies. One of my favorite dishes is Sauto. It is very delicious</p>
       </div>
 
-      <div class="student-photo" style="min-height:456px;">
+      <section class="student-photo">
         <h2>Student Photo</h2>
-        <img 
-          src="images/profile.webp" 
-          alt="Student Photo" 
-          width="250" 
-          height="400" 
-          loading="eager" 
-          fetchpriority="high"
-          style="width:100%; height:auto; display:block;"
-        >
-      </div>
+        <div class="photo-holder">
+          <img src="images/profile.webp" alt="Student Photo" width="250" height="400"/>
+        </div>
+        
+      </section>
     </section>
 
-    <section class="certificate-section" style="min-height:550px;">
+    <section class="certificate-section">
       <h2>Web Certificate Courses</h2>
 
       <div class="filters">
@@ -86,50 +71,26 @@
         <button data-filter="WDD">WDD</button>
       </div>
 
-      <div class="course-cards" id="course-list" style="min-height:300px;">
-        <!-- 6 dynamic cards will be inserted here -->
+      <div class="course-cards" id="course-list">
+        <!-- dynamically inserted courses here -->
       </div>
 
       <p class="credits-total">
-        The total credits for courses listed above is 
-        <span id="credits-total">0</span>
+        The total credits for courses listed above is <span id="credits-total">0</span>
       </p>
     </section>
   </main>
 
-  <footer style="min-height:150px;">
-    <div class="socials" style="display:flex; justify-content:center; gap:0.5rem;">
-      <a href="https://github.com/mwirjo">
-        <img 
-          src="images/github.svg" 
-          alt="GitHub" 
-          width="30" 
-          height="30" 
-          loading="lazy"
-        >
-      </a>
-      <a href="https://linkedin.com/in/yourusername">
-        <img 
-          src="images/linkedin.svg" 
-          alt="LinkedIn" 
-          width="30" 
-          height="30" 
-          loading="lazy"
-        >
-      </a>
-      <a href="#">
-        <img 
-          src="images/instagram.svg" 
-          alt="Instagram" 
-          width="30" 
-          height="30" 
-          loading="lazy"
-        >
-      </a>
+  <footer>
+    <div class="socials">
+      <a href="https://github.com/mwirjo"><img src="images/github.svg" alt="GitHub" loading="lazy"></a>
+      <a href="https://linkedin.com/in/yourusername"><img src="images/linkedin.svg" alt="LinkedIn" loading="lazy"></a>
+      <a href="#"><img src="images/instagram.svg" alt="Instagram" loading="lazy"></a>
     </div>
 
     <p>&copy; <span id="year"></span> &bull; Wirjosentono Mi-ann &bull; Paramaribo, Suriname</p>
-    <p id="lastModified"></p>
+    <p id="lastModified">Last Modification: 04/18/202X 15:14:48</p>
   </footer>
+
 </body>
 </html>
