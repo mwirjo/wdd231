@@ -8,12 +8,12 @@
   <title>WDD231 - Course Home Page</title>
 
   <style>
-    img {aspect-ratio: attr(width)/ attr(width);}
+    img { aspect-ratio: attr(width) / attr(height); }
   </style>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-
   <link rel="preload" as="image" href="images/profile.webp">
 
   <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
@@ -29,24 +29,33 @@
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/courses.js" defer></script>
 </head>
-<body>
-  <header>
-    <div class="branding">
+<body style="min-height:100vh; min-width:320px;">
+  <header style="min-height:100px;">
+    <div class="branding" style="display:flex; align-items:center; gap:0.5rem;">
+      <img 
+        src="images/logo.webp" 
+        alt="Site Logo" 
+        class="logo" 
+        width="150" 
+        height="150" 
+        fetchpriority="high"
+        style="width:150px; height:150px;"
+      >
       <span>Wirjosentono Mi-ann</span>
     </div>
   </header>
 
-  <nav>
+  <nav style="min-height:120px;">
     <a href="#">Home</a>
     <a href="#">Chamber Project</a>
     <a href="#">Final Project</a>
   </nav>
 
-  <main>
+  <main style="min-height:800px;">
     <h1>Home</h1>
 
     <section class="about-grid">
-      <div class="about-me">
+      <div class="about-me" style="min-height:200px;">
         <h2>About Me</h2>
         <p>
           Hi! My name's Mi-ann Wirjosentono. I am from Wanica, a city in Suriname.
@@ -54,7 +63,7 @@
         </p>
       </div>
 
-      <div class="student-photo">
+      <div class="student-photo" style="min-height:456px;">
         <h2>Student Photo</h2>
         <img 
           src="images/profile.webp" 
@@ -63,11 +72,12 @@
           height="400" 
           loading="eager" 
           fetchpriority="high"
+          style="width:100%; height:auto; display:block;"
         >
       </div>
     </section>
 
-    <section class="certificate-section">
+    <section class="certificate-section" style="min-height:550px;">
       <h2>Web Certificate Courses</h2>
 
       <div class="filters">
@@ -76,7 +86,8 @@
         <button data-filter="WDD">WDD</button>
       </div>
 
-      <div class="course-cards" id="course-list">
+      <div class="course-cards" id="course-list" style="min-height:300px;">
+        <!-- 6 dynamic cards will be inserted here -->
       </div>
 
       <p class="credits-total">
@@ -86,8 +97,8 @@
     </section>
   </main>
 
-  <footer>
-    <div class="socials">
+  <footer style="min-height:150px;">
+    <div class="socials" style="display:flex; justify-content:center; gap:0.5rem;">
       <a href="https://github.com/mwirjo">
         <img 
           src="images/github.svg" 
