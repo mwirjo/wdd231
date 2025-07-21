@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.getElementById("menuBtn"),t=document.querySelector("#navMenu");e.addEventListener("click",()=>{t.classList.toggle("hide"),t.classList.contains("hide")?e.textContent="☰":e.textContent="✖"})});
