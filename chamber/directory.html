@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="WDD 231 - Directory page for Chamber of Commerce of Wanica" />
   <meta name="author" content="Wirjosentono Mi-ann" />
@@ -20,10 +20,14 @@
   <!-- Preloads -->
   <link rel="preload" as="image" href="images/profile.webp" type="image/webp" />
   <link rel="preload" as="image" href="images/techhub-400.webp" type="image/webp">
-  <link rel="preload" as="font" href="fonts/roboto-v48-latin-regular.woff2" type="font/woff2" crossorigin />
-  <link rel="preload" as="font" href="fonts/roboto-v48-latin-600.woff2" type="font/woff2" crossorigin />
+  <!-- Preconnects for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Stylesheets (with JS fallback) -->
+  <!-- Combined Google Fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets (with JS fallback) -->
   <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="styles/directory.css" media="print" onload="this.media='all'" />
@@ -65,13 +69,6 @@
       <button id="list-view">List View</button>
     </div>
     <div id="cards" class="grid">
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
     </div>
   </main>
 
@@ -84,7 +81,7 @@
       +597 555-2300
     </div>
 
-    <div class="footer-center socials">
+    <div class="footer-socials">
       <a href="https://github.com/mwirjo">
         <img src="images/github.svg" alt="GitHub" loading="lazy" width="30" height="30" />
       </a>
