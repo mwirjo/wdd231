@@ -1,26 +1,30 @@
-
+#menuBtn,
+a,
+footer,
+header {
+    display: block;
+    color: #fff;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-footer, a, header {
+a,
+footer,
+header {
     background-color: #046;
-    color: #fff;
-    display: flex;
     text-decoration: none;
     padding: 0.5rem;
-    display: block;
 }
-
-.branding, #navMenu ul {
+#navMenu ul,
+.branding {
     display: flex;
 }
-
 body,
 html {
     min-height: 110vh;
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     line-height: 1.5;
 }
 main {
@@ -43,11 +47,9 @@ header {
     height: 50px;
 }
 #menuBtn {
-    display: block;
     background: 0 0;
     border: none;
     cursor: pointer;
-    color: #fff;
     font-size: 1.5rem;
     padding: 0.25rem 0.5rem;
 }
@@ -66,7 +68,7 @@ nav#navMenu ul {
     background-color: #fc0;
     color: #046;
 }
-v#navMenu .active {
+#navMenu .active {
     text-decoration: underline;
     text-underline-offset: 4px;
     font-weight: 700;
@@ -75,13 +77,11 @@ v#navMenu .active {
 nav.hide {
     display: none !important;
 }
-
 footer {
     flex-direction: column;
     padding: 2rem;
     min-height: 300px;
 }
-
 .footer-socials a {
     display: inline-block;
     width: 30px;
