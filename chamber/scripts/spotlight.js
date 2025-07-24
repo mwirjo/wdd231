@@ -27,7 +27,7 @@ async function loadSpotlights() {
         <p class="level">${member.membership === 3 ? "Gold" : "Silver"}</p>
         <div class="divider"></div>
         <div class="card-content">
-            <img src="images/${member.image}" alt="${member.name} logo" loading="lazy" width="100">
+            <img src="images/${member.image}" alt="${member.name} logo" loading="lazy" width="100" height="100">
             <div class"contact-info">
                 <p>${member.address}</p>
                 <p>${member.phone}</p>

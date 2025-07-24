@@ -62,7 +62,14 @@
   <main class="grid-container">
     <!-- Hero Section -->
     <section class="hero">
-      <img src="images/hero-large.jpg" alt="Hero Image" class="hero-img">
+      <picture>
+        <source srcset="images/hero-large.webp" type="image/webp" media="(min-width: 1024px)">
+        <source srcset="images/hero-medium.webp" type="image/webp" media="(min-width: 600px)">
+        <source srcset="images/hero-small.webp" type="image/webp">
+
+        <!-- Fallback for older browsers -->
+        <img src="images/hero-large.jpg" alt="Hero image describing the site" loading="lazy" width="100%" height="auto">
+      </picture>
       <div class="hero-text">
         <a href="join.html" class="cta">Join the Chamber</a>
       </div>

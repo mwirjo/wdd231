@@ -30,7 +30,7 @@
 main > h1 {
   margin: 1.5rem auto;
   text-align: center;
-  font-size: 2rem;
+  -size: 2rem;
   font-weight: bold;
 }
 
@@ -42,7 +42,8 @@ main > h1 {
      
 .spotlight-container, .dashboard {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+
 }
 
 /* Card Styles */
@@ -54,7 +55,6 @@ main > h1 {
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   background-color: rgb(216, 225, 235);
   align-items: center;
-  
 }
 
 .card a{
@@ -80,7 +80,7 @@ main > h1 {
 .card h3 {
   margin: 0;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .card .level {
@@ -103,8 +103,8 @@ main > h1 {
 }
 
 .card-content img{
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   border: 1px solid #999;
 }
