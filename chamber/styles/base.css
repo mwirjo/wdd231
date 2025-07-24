@@ -1,5 +1,5 @@
 #menuBtn,
-a,
+nav a,
 footer,
 header {
     display: block;
@@ -10,7 +10,7 @@ header {
     padding: 0;
     box-sizing: border-box;
 }
-a,
+nav a,
 footer,
 header {
     background-color: #046;
