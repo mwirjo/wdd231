@@ -59,7 +59,6 @@ main > h1 {
 
 .card a{
     text-decoration: none;
-    padding: none;
     color: black;
 }
 
@@ -118,4 +117,10 @@ main > h1 {
 .contact-info a {
   color: #333;
   text-decoration: none;
+}
+
+h2{
+    padding: 10px;
+    background-color: #046;
+    color: #fff;
 }
