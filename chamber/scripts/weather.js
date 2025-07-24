@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       const temp = `${day.main.temp}°C`;
       const desc = day.weather[0].description;
 
-      const div = document.createElement("div");
-      div.textContent = `${date}: ${temp}, ${desc}`;
-      forecastContainer.appendChild(div);
+      const li = document.createElement("li");
+      li.textContent = `${date}: ${temp}, ${desc}`;
+      forecastContainer.appendChild(li);
     });
 
   } catch (err) {
