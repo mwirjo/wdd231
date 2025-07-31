@@ -1,12 +1,10 @@
 h1{
   text-align: center;
 }
-
 form {
   display: flex;
   flex-direction: column;
-  alignment-baseline: center;
-  justify-content: center;
+
   gap: 1.5rem;
   padding: 1rem;
 }
