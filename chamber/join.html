@@ -74,13 +74,19 @@
 
       <fieldset>
         <legend>Business Details</legend>
-        <label for="business">Business/Organization Name: <input type="text" id="business" name="business" required  ></label>
-        <label for="title">Title/Position: 
-          <input type="text" id="title" name="title" required 
-            pattern="[A-Za-z\s\-]{7,}" 
-            title="At least 7 letters, spaces, or hyphens"  >
+        <label for="business">Business/Organization Name:
+          <input type="text" id="business" name="business" required>
+        </label>
+        <label for="title">Title/Position:
+          <input type="text" id="title" name="title" required
+            pattern="[A-Za-z\s\-]{7,}"
+            title="At least 7 letters, spaces, or hyphens">
+        </label>
+        <label for="comments">Business Description or Additional Comments:
+          <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your business or leave a note..." maxlength="500"></textarea>
         </label>
       </fieldset>
+
 
       <fieldset>
         <legend>Membership Level</legend>
