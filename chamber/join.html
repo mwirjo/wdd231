@@ -1,127 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Standard Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="description" content="Join the Chamber of Commerce of Wanica to connect, grow, and access exclusive local business resources.">
-    <meta name="author" content="Wirjosentono Mi-ann">
+<head>
+  <!-- Standard Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="description" content="Join the Chamber of Commerce of Wanica to connect, grow, and access exclusive local business resources.">
+  <meta name="author" content="Wirjosentono Mi-ann">
 
-    <!-- Open Graph Meta -->
-    <meta property="og:title" content="Join the Chamber - Wanica Chamber of Commerce"  >
-    <meta property="og:description" content="Become a member of the Wanica Chamber of Commerce and enjoy networking opportunities, business visibility, and community support."  >
-    <meta property="og:image" content="https://mwirjo.github.io/wdd231/chamber/images/logo.webp"  >
-    <meta property="og:url" content="https://mwirjo.github.io/wdd231/chamber/join.html"  >
-    <meta property="og:type" content="website"  >
-    <meta property="og:locale" content="en_US"  >
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Join the Chamber - Wanica Chamber of Commerce"  >
+  <meta property="og:description" content="Become a member of the Wanica Chamber of Commerce and enjoy networking opportunities, business visibility, and community support."  >
+  <meta property="og:image" content="https://mwirjo.github.io/wdd231/chamber/images/logo.webp"  >
+  <meta property="og:url" content="https://mwirjo.github.io/wdd231/chamber/join.html"  >
+  <meta property="og:type" content="website"  >
+  <meta property="og:locale" content="en_US"  >
 
-    <title>Join the Chamber - Wanica Chamber of Commerce<title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css" >
-    <link rel="stylesheet" href="styles/base.css"  >
-    <link rel="stylesheet" href="styles/media.css"  >
-    <link rel="stylesheet" href="styles/join.css"  >
-    <script src="scripts/join.js" defer></script>
-    <script src="scripts/date.js" defer></script>
+  <title>Join the Chamber - Wanica Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico">
+      <!-- Preloads -->
+  <link rel="preload" as="image" href="images/hero.webp" type="image/webp">
+  <!-- Preconnects for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  </head>
-  <body>
-    <header>
-      <div class="branding">
-        <img src="images/logo.webp" alt="Chamber Logo" class="logo"  >
-        <p>Chamber of Commerce</p>
-        <button id="menuBtn" aria-label="Toggle navigation">&#9776;</button>
-      </div>
-      <nav id="navMenu" class="hide">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="join.html" class="active">Join</a></li>
-        </ul>
-      </nav>
-    </header>
+  <!-- Combined Google Fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <main>
-      <h1>Join the Chamber</h1>
-      <form action="thankyou.html" method="get">
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label for="fname">First Name: <input type="text" id="fname" name="fname" required autocomplete="given-name"  ></label>
-          <label for="lname">Last Name: <input type="text" id="lname" name="lname" required autocomplete="family-name"  ></label>
-          <label for="email">Email: <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email"  ></label>
-          <label for="phone">Phone: <input type="tel" id="phone" name="phone" autocomplete="tel" required  ></label>
-        </fieldset>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="styles/join.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="styles/media.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/media.css">
+  </noscript>
 
-        <fieldset>
-          <legend>Business Details</legend>
-          <label for="business">Business/Organization Name: <input type="text" id="business" name="business" required  ></label>
-          <label for="title">Title/Position: 
-            <input type="text" id="title" name="title" required 
-              pattern="[A-Za-z\s\-]{7,}" 
-              title="At least 7 letters, spaces, or hyphens"  >
-          </label>
-        </fieldset>
+  <!-- JavaScript -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/join.js" defer></script>
 
-        <fieldset>
-          <legend>Membership Level</legend>
-          <label><input type="radio" name="membership" value="basic" required  > Basic</label>
-          <label><input type="radio" name="membership" value="silver"  > Silver</label>
-          <label><input type="radio" name="membership" value="gold"  > Gold</label>
-          <label><input type="radio" name="membership" value="platinum"  > Platinum</label>
-          <div class="membership-cards">
-            <div class="card" tabindex="0">
-              <h3>Basic</h3>
-              <button type="button" onclick="showModal('Basic includes basic directory listing.')">View Benefits</button>
-            </div>
-            <div class="card">
-              <h3>Silver</h3>
-              <button type="button" onclick="showModal('Silver includes event invites and directory listing.')">View Benefits</button>
-            </div>
-            <div class="card">
-              <h3>Gold</h3>
-              <button type="button" onclick="showModal('Gold includes promotion features and all lower-tier benefits.')">View Benefits</button>
-            </div>
-            <div class="card">
-              <h3>Platinum</h3>
-              <button type="button" onclick="showModal('Platinum includes priority promotion and speaking opportunities.')">View Benefits</button>
-            </div>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.webp" alt="Chamber Logo" class="logo"  >
+      <p>Chamber of Commerce</p>
+      <button id="menuBtn" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+    <nav id="navMenu" class="hide">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="#" class="active">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+    <form action="thankyou.html" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fname">First Name: <input type="text" id="fname" name="fname" required autocomplete="given-name"  ></label>
+        <label for="lname">Last Name: <input type="text" id="lname" name="lname" required autocomplete="family-name"  ></label>
+        <label for="email">Email: <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email"  ></label>
+        <label for="phone">Phone: <input type="tel" id="phone" name="phone" autocomplete="tel" required  ></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Business Details</legend>
+        <label for="business">Business/Organization Name: <input type="text" id="business" name="business" required  ></label>
+        <label for="title">Title/Position: 
+          <input type="text" id="title" name="title" required 
+            pattern="[A-Za-z\s\-]{7,}" 
+            title="At least 7 letters, spaces, or hyphens"  >
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Membership Level</legend>
+        <label><input type="radio" name="membership" value="basic" required  > Basic</label>
+        <label><input type="radio" name="membership" value="silver"  > Silver</label>
+        <label><input type="radio" name="membership" value="gold"  > Gold</label>
+        <label><input type="radio" name="membership" value="platinum"  > Platinum</label>
+        <div class="membership-cards">
+          <div class="card" tabindex="0">
+            <h3>Basic</h3>
+            <button type="button" onclick="showModal('Basic includes basic directory listing.')">View Benefits</button>
           </div>
-        </fieldset>
+          <div class="card">
+            <h3>Silver</h3>
+            <button type="button" onclick="showModal('Silver includes event invites and directory listing.')">View Benefits</button>
+          </div>
+          <div class="card">
+            <h3>Gold</h3>
+            <button type="button" onclick="showModal('Gold includes promotion features and all lower-tier benefits.')">View Benefits</button>
+          </div>
+          <div class="card">
+            <h3>Platinum</h3>
+            <button type="button" onclick="showModal('Platinum includes priority promotion and speaking opportunities.')">View Benefits</button>
+          </div>
+        </div>
+      </fieldset>
 
-        <input type="hidden" name="timestamp" id="timestamp"  >
+      <input type="hidden" name="timestamp" id="timestamp"  >
 
-        <button type="submit">Join Now</button>
-      </form>
+      <button type="submit">Join Now</button>
+    </form>
 
-      <!-- Modal -->
-      <dialog id="benefitsModal">
-        <p id="modalContent"></p>
-        <button id="closeModal">Close</button>
-      </dialog>
-    </main>
+    <!-- Modal -->
+    <dialog id="benefitsModal">
+      <p id="modalContent"></p>
+      <button id="closeModal">Close</button>
+    </dialog>
+  </main>
 
-    <footer>
-      <div class="footer-left">
-        <strong>Chamber of Commerce</strong><br  >
-        Indira Gandhiweg 123<br  >
-        Wanica, Suriname<br  >
-        info@wanicachamber.sr<br  >
-        +597 555-2300
-      </div>
-      <div class="footer-socials">
-        <a href="https://github.com/mwirjo"><img src="images/github.svg" alt="GitHub"  ></a>
-        <a href="https://linkedin.com/in/yourusername"><img src="images/linkedin.svg" alt="LinkedIn"  ></a>
-        <a href="#"><img src="images/instagram.svg" alt="Instagram"  ></a>
-      </div>
-      <div class="footer-right">
-        <p>
-          WDD231 Project<br  >
-          Wirjosentono M.<br  >
-          &copy; <span id="year"></span> Chamber of Commerce<br  >
-          L.M: <span id="lastModified"></span>
-        </p>
-      </div>
-    </footer>
-  </body>
+  <footer>
+    <div class="footer-left">
+      <strong>Chamber of Commerce</strong><br  >
+      Indira Gandhiweg 123<br  >
+      Wanica, Suriname<br  >
+      info@wanicachamber.sr<br  >
+      +597 555-2300
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/mwirjo"><img src="images/github.svg" alt="GitHub"  ></a>
+      <a href="https://linkedin.com/in/yourusername"><img src="images/linkedin.svg" alt="LinkedIn"  ></a>
+      <a href="#"><img src="images/instagram.svg" alt="Instagram"  ></a>
+    </div>
+    <div class="footer-right">
+      <p>
+        WDD231 Project<br  >
+        Wirjosentono M.<br  >
+        &copy; <span id="year"></span> Chamber of Commerce<br  >
+        L.M: <span id="lastModified"></span>
+      </p>
+    </div>
+  </footer>
+</body>
 </html>
