@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thank you for joining the Chamber of Commerce of Wanica" />
+  <meta name="author" content="Wirjosentono Mi-ann" />
+  <title>Thank You - Chamber of Commerce</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/thankyou.css" />
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.webp" alt="Chamber Logo" class="logo" />
+      <p>Chamber of Commerce</p>
+      <button id="menuBtn" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+    <nav id="navMenu" class="hide">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You for Joining!</h1>
+    <p>We’ve received your membership submission. Here’s what you submitted:</p>
+    <ul>
+      <li><strong>First Name:</strong> <span id="fname"></span></li>
+      <li><strong>Last Name:</strong> <span id="lname"></span></li>
+      <li><strong>Email:</strong> <span id="email"></span></li>
+      <li><strong>Phone:</strong> <span id="phone"></span></li>
+      <li><strong>Business Name:</strong> <span id="business"></span></li>
+      <li><strong>Submission Date:</strong> <span id="timestamp"></span></li>
+    </ul>
+    <p>We will contact you soon. Welcome to the Chamber!</p>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <strong>Chamber of Commerce</strong><br />
+      Indira Gandhiweg 123<br />
+      Wanica, Suriname<br />
+      info@wanicachamber.sr<br />
+      +597 555-2300
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/mwirjo"><img src="images/github.svg" alt="GitHub" /></a>
+      <a href="https://linkedin.com/in/yourusername"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+      <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+    </div>
+    <div class="footer-right">
+      <p>
+        WDD231 Project<br />
+        Wirjosentono M.<br />
+        &copy; <span id="year"></span> Chamber of Commerce<br />
+        L.M: <span id="lastModified"></span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
