@@ -27,7 +27,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/join.css">
   <link rel="stylesheet" href="styles/media.css" media="print" onload="this.media='all'">
   <noscript>
     <link rel="stylesheet" href="styles/normalize.css">
@@ -64,34 +64,56 @@
     <form action="thankyou.html" method="get">
       <fieldset>
         <legend>Personal Information</legend>
-        <label for="fname">First Name: <input type="text" id="fname" name="fname" required autocomplete="given-name"  ></label>
-        <label for="lname">Last Name: <input type="text" id="lname" name="lname" required autocomplete="family-name"  ></label>
-        <label for="email">Email: <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email"  ></label>
-        <label for="phone">Phone: <input type="tel" id="phone" name="phone" autocomplete="tel" required  ></label>
+        <label for="fname">First Name:
+          <input type="text" id="fname" name="fname" required autocomplete="given-name" />
+        </label>
+        <label for="lname">Last Name:
+          <input type="text" id="lname" name="lname" required autocomplete="family-name" />
+        </label>
+        <label for="email">Email:
+          <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email" />
+        </label>
+        <label for="phone">Phone:
+          <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+        </label>
       </fieldset>
 
       <fieldset>
         <legend>Business Details</legend>
         <label for="business">Business/Organization Name:
-          <input type="text" id="business" name="business" required>
+          <input type="text" id="business" name="business" required />
         </label>
         <label for="title">Title/Position:
           <input type="text" id="title" name="title" required
             pattern="[A-Za-z\s\-]{7,}"
-            title="At least 7 letters, spaces, or hyphens">
+            title="At least 7 letters, spaces, or hyphens" />
         </label>
         <label for="comments">Business Description or Additional Comments:
           <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your business or leave a note..." maxlength="500"></textarea>
         </label>
       </fieldset>
 
-
-      <fieldset>
+      <fieldset class="membership">
         <legend>Membership Level</legend>
-        <label><input type="radio" name="membership" value="basic" required  > Basic</label>
-        <label><input type="radio" name="membership" value="silver"  > Silver</label>
-        <label><input type="radio" name="membership" value="gold"  > Gold</label>
-        <label><input type="radio" name="membership" value="platinum"  > Platinum</label>
+        <div class="membership-radios">
+          <label for="basic">
+            <input type="radio" id="basic" name="membership" value="basic" required />
+            Basic
+          </label>
+          <label for="silver">
+            <input type="radio" id="silver" name="membership" value="silver" />
+            Silver
+          </label>
+          <label for="gold">
+            <input type="radio" id="gold" name="membership" value="gold" />
+            Gold
+          </label>
+          <label for="platinum">
+            <input type="radio" id="platinum" name="membership" value="platinum" />
+            Platinum
+          </label>
+        </div>
+
         <div class="membership-cards">
           <div class="card" tabindex="0">
             <h2>Basic</h2>
@@ -112,7 +134,7 @@
         </div>
       </fieldset>
 
-      <input type="hidden" name="timestamp" id="timestamp"  >
+      <input type="hidden" name="timestamp" id="timestamp" />
 
       <button type="submit">Join Now</button>
     </form>
