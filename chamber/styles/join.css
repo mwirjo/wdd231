@@ -1,39 +1,55 @@
 
-h1{
+/* Headings */
+h1 {
   text-align: center;
+  max-height: 40px;
+  margin: 1rem 0; /* Replace invalid 'none' */
+  font-weight: 700;
+  font-size: 1.8rem;
 }
+
+/* Form Container */
 form {
   display: flex;
   flex-direction: column;
-  background-color: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00000050;
-  min-width: 320px;
-  max-width: 600px;
-  margin: 0 auto;
+  padding: 1rem;
+  max-width: 700px;
+  min-width: 320px; /* mobile first small screens */
+  width: 90vw; /* responsive width */
+  margin: 0 auto ;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Fieldsets */
 fieldset {
   border: 3px solid #046;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 4px;
+  width: 100%;
+  max-width: 650px;
+  min-height: 300px;
+  padding: 1rem;
+  background: #fefefe;
 }
 
+/* Legend */
 legend {
-  
-  font-weight: bold;
-  color: var(--accent);
+  font-weight: 700;
   padding: 0 0.5rem;
 }
 
+/* Labels */
 label {
   display: block;
   margin-bottom: 1rem;
-  color: var(--label-text);
+  max-width: 600px;
+  width: 100%;
+  font-weight: 600;
 }
 
+/* Inputs and textarea */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -42,50 +58,80 @@ textarea {
   padding: 0.5rem;
   border: 1px solid black;
   border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
 }
 
+/* Textarea resizing */
 textarea {
   resize: vertical;
+  min-height: 80px;
 }
 
+/* Input validation border colors */
+input:required:invalid,
+textarea:required:invalid {
+  border: 2px solid #ff4d4d; /* red */
+}
+input:required:valid,
+textarea:required:valid {
+  border: 2px solid #33cc33; /* green */
+}
+
+/* Submit button */
 button[type="submit"] {
-  align-items: center;
-  background-color:  #046;
+  align-self: center;
+  background-color: #046;
   color: #fff;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   border-radius: 5px;
-}
-
-button[type="submit"]:hover {
-  background-color: rgb(0, 179, 255);
+  border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: rgb(0, 179, 255);
   color: black;
+  outline: none;
 }
 
-/* Membership Cards & Modals */
+/* Membership container */
 .membership {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
+/* Membership cards container: grid with stable height */
 .membership-cards {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
+  min-height: 420px; /* reserve vertical space to prevent layout shift */
 }
 
+/* Cards with fadeIn opacity only (no translateY) */
 .card {
+  opacity: 0;
+  animation: fadeInOpacity 0.6s ease forwards;
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 4px 8px #00000030;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+  min-width: 200px;
+  background-color: #f0f9ff;
+  user-select: none;
+  cursor: default;
 }
 
+/* Animation delays for cards */
+.card:nth-child(1) {
+  animation-delay: 0s;
+}
 .card:nth-child(2) {
   animation-delay: 0.2s;
 }
@@ -96,77 +142,77 @@ button[type="submit"]:hover {
   animation-delay: 0.6s;
 }
 
+/* Card headings */
 .card h2 {
   margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #046;
 }
 
+/* Card buttons */
 .card button {
   background-color: #046;
   color: #fff;
-  border: 1px solid var(--accent);
   padding: 1rem;
   margin-top: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+  font-weight: 600;
 }
-.card button:hover, #closeModal:hover {
+.card button:hover,
+.card button:focus {
   background-color: rgb(0, 179, 255);
   color: black;
+  outline: none;
 }
 
-
-/* Modal Styling */
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-dialog {
-  background-color: #fff;
+/* Modal styling */
+#benefitsModal {
+  box-sizing: border-box;
+  width: 300px;
+  max-width: 80vw;
   padding: 1rem;
-  border-radius: 10px;
-  border:1px solid blue;
-  max-width: 400px;
-  margin: auto;
-}
-
-#closeModal {
-  margin-top: 1rem;
-  background-color: #046;
-  color: #fff;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  font-family: sans-serif;
+
+  /* Make modal visually hidden initially but occupying space for no layout shift */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 }
 
-/* Animation */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Show modal: visible with opacity and no transform */
+#benefitsModal[open] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
-/* Responsive Design */
-@media (min-width: 800px) {
 
-  .membership {
-    flex-direction: column;
-  }
+/* Modal buttons hover */
+#benefitsModal button:hover,
+#closeModal:hover,
+#benefitsModal button:focus,
+#closeModal:focus {
+  background-color: rgb(0, 179, 255);
+  color: black;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
 
-  .membership-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 }
 
-/* Indicate required field states */
-input:required:invalid,
-textarea:required:invalid {
-  border: 2px solid #ff4d4d; /* red border */
+/* Backdrop for modal */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.3);
 }
 
-input:required:valid,
-textarea:required:valid {
-  border: 2px solid #33cc33; /* green border */
+@keyframes fadeInOpacity {
+  to { opacity: 1; }
 }

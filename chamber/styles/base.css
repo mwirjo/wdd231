@@ -23,9 +23,16 @@ header {
 }
 body,
 html {
-    min-height: 110vh;
     font-family: Roboto, sans-serif;
     line-height: 1.5;
+    line-height: 1.4;
+    background: #f9f9f9;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    /* Body & typography */
 }
 main {
     margin: 0 auto;
@@ -92,10 +99,11 @@ footer {
 }
 .footer-socials img {
     filter: brightness(0) invert(1);
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 .footer-center.socials img:hover {
     filter: none;
 }
+
