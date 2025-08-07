@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Palmentuin (Garden of Palms)",
+    "image": "images/palmentuin.webp",
+    "address": "Van Roseveltkade, behind Presidential Palace, Paramaribo, Suriname",
+    "description": "The Garden of Palms is a historic urban palm garden created in 1685 by Governor Cornelis van Aerssen van Sommelsdijck. It features royal palms, tropical birds and even capuchin monkeys. The park was officially opened to the public in the early 20th century and is now part of Paramaribo UNESCO World Heritage area."
+  },
+  {
+    "name": "Fort Zeelandia",
+    "image": "images/fort-zeelandia.webp",
+    "address": "Paramaribo waterfront, Paramaribo, Suriname",
+    "description": "Fort Zeelandia originated as a French trading post in 1640, later held by the British and renamed Fort Willoughby in 1651, before being captured by the Dutch in 1667 and renamed Fort Zeelandia. It served as a prison and military HQ, witnessed the December murders of 1982 and since the 1970s houses the Surinaams Museum with ethnographic exhibits and colonial relics."
+  },
+  {
+    "name": "Independence Square",
+    "image": "images/independence-square.webp",
+    "address": "Onafhankelijkheidsplein, Central Paramaribo, Paramaribo, Suriname",
+    "description": "This symbolic civic square is bordered by key buildings: the Presidential Palace, the cathedral and government offices. It's often the site of national ceremonies, and nearby the Suriname River waterfront with small eateries selling local snacks."
+  },
+  {
+    "name": "Central Market (Waterkant Market)",
+    "image": "images/central-market.webp",
+    "address": "Waterkant, Paramaribo, Suriname",
+    "description": "This vibrant riverside market is the busiest in Suriname, offering fresh fruits, spices, local crafts and traditional dishes. A lively atmosphere perfect for immersing in the culture and flavours of Paramaribo."
+  },
+  {
+    "name": "Presidential Palace",
+    "image": "images/presidential-palace.webp",
+    "address": "Independence Square, Paramaribo, Suriname",
+    "description": "Situated at Independence Square, this white wooden colonial palace is the official residence of the President. It's a significant landmark symbolizing Suriname political history and identity."
+  },
+  {
+    "name": "Saint Peter and Paul Cathedral",
+    "image": "images/cathedral.webp",
+    "address": "Henck Arronstraat, Paramaribo, Suriname",
+    "description": "The largest wooden cathedral in the Western Hemisphere, built in Gothic Revival style. It is celebrated for its impressive architecture and cultural significance to local religious heritage."
+  },
+  {
+    "name": "Peperpot Nature Park",
+    "image": "images/peperpot-park.webp",
+    "address": "Commewijne District, near Meerzorg, Suriname",
+    "description": "About a 15 to 30 minute drive from Paramaribo across the river, this reserve sits on a former coffee and cocoa plantation. The 820ha park includes forest trails, canals and plantations, plus frequent sightings of capuchin monkeys, iguanas, tropical birds and butterflies."
+  },
+  {
+    "name": "Bigi Pan Nature Reserve",
+    "image": "images/bigi-pan.webp",
+    "address": "Nickerie District, western Suriname",
+    "description": "A vast inland wetland ecosystem, notable for birdwatching, fishing and houseboat tours. Its one of Surinames largest protected areas, offering unique ecoexperiences in the western region of the country."
+  }
+]
