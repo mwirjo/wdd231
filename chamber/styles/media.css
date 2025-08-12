@@ -49,6 +49,25 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+
+   .discover-grid {
+    
+  }
+
+
+    .visit-info {
+    background-color: #e7f9ff;
+    border: 1px solid #b3e5fc;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    }
+
+    #visit-message {
+    font-size: 1rem;
+    color: #004e64;
+    margin: 0;
+}
 }
 
 

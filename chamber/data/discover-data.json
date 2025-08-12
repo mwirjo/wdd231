@@ -1,6 +1,6 @@
 [
   {
-    "name": "Palmentuin (Garden of Palms)",
+    "name": "Palmentuin",
     "image": "images/palmentuin.webp",
     "address": "Van Roseveltkade, behind Presidential Palace, Paramaribo, Suriname",
     "description": "The Garden of Palms is a historic urban palm garden created in 1685 by Governor Cornelis van Aerssen van Sommelsdijck. It features royal palms, tropical birds and even capuchin monkeys. The park was officially opened to the public in the early 20th century and is now part of Paramaribo UNESCO World Heritage area."
@@ -18,7 +18,7 @@
     "description": "This symbolic civic square is bordered by key buildings: the Presidential Palace, the cathedral and government offices. It's often the site of national ceremonies, and nearby the Suriname River waterfront with small eateries selling local snacks."
   },
   {
-    "name": "Central Market (Waterkant Market)",
+    "name": "Central Market",
     "image": "images/central-market.webp",
     "address": "Waterkant, Paramaribo, Suriname",
     "description": "This vibrant riverside market is the busiest in Suriname, offering fresh fruits, spices, local crafts and traditional dishes. A lively atmosphere perfect for immersing in the culture and flavours of Paramaribo."
@@ -30,7 +30,7 @@
     "description": "Situated at Independence Square, this white wooden colonial palace is the official residence of the President. It's a significant landmark symbolizing Suriname political history and identity."
   },
   {
-    "name": "Saint Peter and Paul Cathedral",
+    "name": "Saint Peter & Paul Cathedral",
     "image": "images/cathedral.webp",
     "address": "Henck Arronstraat, Paramaribo, Suriname",
     "description": "The largest wooden cathedral in the Western Hemisphere, built in Gothic Revival style. It is celebrated for its impressive architecture and cultural significance to local religious heritage."
