@@ -17,16 +17,15 @@
   <link rel="icon" href="favicon.ico">
 
   <!-- Preloads -->
-  <link rel="preload" as="image" href="images/techhub-400.webp" type="image/webp">
-  <!-- Preconnects for better performance -->
+  <link rel="preload" as="image" href="images/palmentuin.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Combined Google Fonts link -->
-   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <!-- Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Stylesheets (with JS fallback) -->
+  <!-- Styles -->
   <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="styles/base.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="styles/discover.css" media="print" onload="this.media='all'">
@@ -37,6 +36,7 @@
     <link rel="stylesheet" href="styles/discover.css">
     <link rel="stylesheet" href="styles/media.css">
   </noscript>
+
   <!-- Scripts -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
@@ -68,7 +68,19 @@
 
     <h1>Discover the Best of Suriname</h1>
     <section class="discover-grid">
-      <!-- Cards loaded by JavaScript -->
+      <!-- First card hardcoded for fast LCP -->
+      <article class="card">
+        <img src="images/palmentuin.webp" alt="Palmentuin" width="300" height="200">
+        <h2>Palmentuin</h2>
+        <address>Van Roseveltkade, behind Presidential Palace, Paramaribo, Suriname</address>
+        <p>
+          The Garden of Palms is a historic urban palm garden created in 1685 by Governor Cornelis van Aerssen van Sommelsdijck. 
+          It features royal palms, tropical birds and even capuchin monkeys. 
+          The park was officially opened to the public in the early 20th century and is now part of Paramaribo UNESCO World Heritage area.
+        </p>
+        <button>Learn More</button>  <!-- This line adds the button -->
+      </article>
+      <!-- JS will append the rest of the cards -->
     </section>
   </main>
 
@@ -96,7 +108,7 @@
     <div class="footer-right">
       <p>
         WDD231 Project<br>
-        Wirjosentono M.<br >
+        Wirjosentono M.<br>
         &copy; <span id="year"></span> Chamber of Commerce<br>
         L.M: <span id="lastModified"></span>
       </p>

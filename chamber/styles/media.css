@@ -1,80 +1,21 @@
-@media screen and (min-width: 768px) {
-    header, footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-    }
-    
-    footer,#navMenu ul,header {
-        display: flex;
-        flex-direction: row;
-    }
-    #navMenu ul {
-        gap: 2rem;
-        margin-top: 0;
-    }
-    #menuBtn {
-        display: none;
-    }
-    #navMenu {
-        display: block !important;
-        border-top: none;
-    }
-    form {
-        min-width: 500px;
-        max-width: 800px;
-        }
-
-    fieldset {
-        min-width: 400px;
-        max-width: 700px;
-        }
-    
-    label {
-        min-width: 400px;
-        max-width: 650px;
-    }
-
-    .hero {
-        grid-column: 1 / -1;
-    }
-    
-    .membership {
-    flex-direction: column;
+@media screen and (min-width:768px){fieldset,label{min-width:400px}footer,header{display:flex;flex-direction:row;justify-content:space-evenly;align-items:center;text-align:center}#navMenu ul,footer,header{display:flex;flex-direction:row}#navMenu ul{gap:2rem;margin-top:0}#menuBtn{display:none}#navMenu{display:block!important;border-top:none}form{min-width:500px;max-width:800px}fieldset{max-width:700px}label{max-width:650px}.hero{grid-column:1/-1}.membership{flex-direction:column}.membership-cards{display:grid;grid-template-columns:1fr}.discover-grid{grid-template-columns:repeat(2,1fr);grid-template-areas:"card1 card2" "card3 card4" "card5 card6" "card7 card8"}.card img:hover{transform:scale(1.05);filter:brightness(.9)}}@media (min-width:1025px){.discover-grid{grid-template-columns:repeat(3,1fr);grid-template-areas:"card1 card2 card3" "card4 card5 card6" "card7 card8 card9"} footer {
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "left socials right";
+    align-items: center;
+    text-align: initial;
   }
 
-  .membership-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .discover-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8";
+  .footer-left {
+    grid-area: left;
+    text-align: left;
   }
 
-  .card img:hover {
-    transform: scale(1.05);
-    filter: brightness(0.9);
+  .footer-socials {
+    grid-area: socials;
+    justify-self: center;
   }
-  
 
-}
-
-
-/*Large Screens: 1025px+*/
-@media (min-width: 1025px) {
-  .discover-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "card1 card2 card3"
-      "card4 card5 card6"
-      "card7 card8 card9";
-  }
-}
-
+  .footer-right {
+    grid-area: right;
+    text-align: left;
+  }}

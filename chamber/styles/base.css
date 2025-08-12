@@ -1,18 +1,22 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
 #menuBtn,
-nav a,
 footer,
-header {
+header,
+nav a {
     display: block;
     color: #fff;
 }
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-nav a,
 footer,
-header {
+header,
+nav a {
     background-color: #046;
     text-decoration: none;
     padding: 0.5rem;
@@ -24,15 +28,11 @@ header {
 body,
 html {
     font-family: Roboto, sans-serif;
-    line-height: 1.5;
     line-height: 1.4;
     background: #f9f9f9;
     color: #000;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: 0;
-    padding: 0;
-    /* Body & typography */
 }
 main {
     margin: 0 auto;
@@ -85,10 +85,35 @@ nav.hide {
     display: none !important;
 }
 footer {
-    flex-direction: column;
-    padding: 2rem;
-    min-height: 300px;
-}
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    min-height: 15rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left"
+      "socials"
+      "right";
+    text-align: center; /* center text on mobile */
+  }
+
+  .footer-left {
+    grid-area: left;
+  }
+
+  .footer-socials {
+    grid-area: socials;
+    min-width: 120px; /* or enough to fit all icons side by side */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    }
+
+  .footer-right {
+    grid-area: right;
+  }
+
 .footer-socials a {
     display: inline-block;
     width: 30px;
@@ -101,13 +126,18 @@ footer {
     filter: brightness(0) invert(1);
     width: 30px;
     height: 30px;
+    display: inline-block;
     object-fit: contain;
 }
 .footer-center.socials img:hover {
     filter: none;
 }
-
-h1{
+#year, #lastModified {
+  display: inline-block;
+  min-width: 5ch; /* reserve space for text like '2025' or date/time */
+  text-align: left;
+  white-space: nowrap;
+}
+h1 {
     text-align: center;
-    
 }
