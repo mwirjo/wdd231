@@ -1,5 +1,6 @@
 
 .discover-grid {
+  min-height: 500px;
   display: grid;
   gap: 0.5rem;
   padding: 1rem;
@@ -79,44 +80,17 @@
   background-color: #006f8a;
 }
 
-/*Medium Screens: 641px–1024px*/
-@media (min-width: 641px) {
-  .discover-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-      "card7 card8";
-  }
-
-  .card img:hover {
-    transform: scale(1.05);
-    filter: brightness(0.9);
-  }
-}
-
-/*Large Screens: 1025px+*/
-@media (min-width: 1025px) {
-  .discover-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "card1 card2 card3"
-      "card4 card5 card6"
-      "card7 card8 card9";
-  }
-}
-
 .visit-info {
-  background-color: #e7f9ff;
-  border: 1px solid #b3e5fc;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 8px;
+    min-height: 1.5em;
+    background-color: #e7f9ff;
+    border: 1px solid #b3e5fc;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
 }
 
 #visit-message {
-  font-size: 1rem;
-  color: #004e64;
-  margin: 0;
+    font-size: 1rem;
+    color: #004e64;
+    margin: 0;
 }
