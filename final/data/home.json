@@ -1,0 +1,16 @@
+{
+  "whyCybertron": {
+    "title": "Why Choose Cybertron?",
+    "description": "In fast-paced warehouse environments, efficiency and accuracy are essential. Cybertron automates routine tasks like sorting, picking, and inventory management to help you:",
+    "benefits": [
+      "✅ Boost productivity: Save time and reduce manual labor.",
+      "✅ Increase accuracy: Minimize errors with intelligent automation.",
+      "✅ Enhance safety: Reduce physical strain and workplace accidents.",
+      "✅ Scalable solution: Adapt Cybertron as your warehouse grows."
+    ]
+  },
+  "aboutCybertron": {
+    "title": "About Cybertron",
+    "description": "Cybertron is an intelligent warehouse assistant equipped with advanced sensors, cameras, and AI to efficiently navigate aisles, identify products, and manage stock. Designed for versatility and reliability, Cybertron integrates seamlessly into your existing operations, helping your team work smarter."
+  }
+}

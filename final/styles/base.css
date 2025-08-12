@@ -1,0 +1,144 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+#menuBtn,
+footer,
+header,
+nav a {
+    display: block;
+    color: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+footer,
+header,
+nav a {
+    background-color: #046;
+    text-decoration: none;
+    padding: 1rem;
+
+}
+#navMenu ul,
+.branding {
+    display: flex;
+}
+body,
+html {
+    font-family: Roboto, sans-serif;
+    line-height: 1.4;
+    background: #f9f9f9;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 60vh;
+}
+header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.branding {
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+#menuBtn {
+    background: 0 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+}
+#navMenu {
+    border-top: 1px solid #fff;
+    width: 100%;
+}
+nav#navMenu ul {
+    list-style: none;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+#navMenu a:hover {
+    background-color: #fc0;
+    color: #046;
+}
+#navMenu .active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: 700;
+    color: #fff;
+}
+nav.hide {
+    display: none !important;
+}
+footer {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    min-height: 15rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left"
+      "socials"
+      "right";
+    text-align: center; /* center text on mobile */
+  }
+
+  .footer-left {
+    grid-area: left;
+  }
+
+  .footer-socials {
+    grid-area: socials;
+    min-width: 120px; /* or enough to fit all icons side by side */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    }
+
+  .footer-right {
+    grid-area: right;
+  }
+
+.footer-socials a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    gap: 1rem;
+    margin: 1rem 0;
+    min-height: 50px;
+}
+.footer-socials img {
+    filter: brightness(0) invert(1);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    object-fit: contain;
+}
+.footer-center.socials img:hover {
+    filter: none;
+}
+#year, #lastModified {
+  display: inline-block;
+  min-width: 5ch; /* reserve space for text like '2025' or date/time */
+  text-align: left;
+  white-space: nowrap;
+}
+h1 {
+    text-align: center;
+}

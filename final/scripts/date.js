@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.getElementById("year"),t=new Date;e.textContent=t.getFullYear();let n=document.getElementById("lastModified");n.textContent=`Last Modification: ${document.lastModified}`});

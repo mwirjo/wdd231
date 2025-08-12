@@ -1,0 +1,85 @@
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fff;
+}
+.cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: rgba(0, 68, 136, 0.8);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Main Title */
+.main-title,
+main > h1 {
+  margin: 1.5rem auto;
+  text-align: center;
+  -size: 2rem;
+  font-weight: bold;
+}
+.content-wrapper{
+    display: grid;
+    gap: 2rem;
+}
+.content-row {
+  display: grid;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  /* Default mobile layout: stack */
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "text"
+    "image";
+  align-items: center;
+  justify-content: center;
+}
+
+/* Assign grid areas */
+.text-block {
+
+  grid-area: text;
+  text-align: left;
+}
+
+.image-block {
+  grid-area: image;
+  text-align: center;
+}
+.content-section{
+    text-align: center;
+    border: 1px solid;
+    padding: 1rem;
+    gap:1rem;
+}
+
+/* Medium screens (641px - 1024px): two columns side by side */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .content-row {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+  }
+}
+
+/* Large screens (1025px and up) — same as medium or adjust as needed */
+@media (min-width: 1025px) {
+  .content-row {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+  }
+}
