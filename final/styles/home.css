@@ -7,11 +7,6 @@
     max-width: 1000px;
     margin: 0 auto 2rem auto;
 }
-.section-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
 
 /* Content row */
 .content-row {
@@ -64,7 +59,5 @@
 .text-block ul {
     list-style: none;
     margin-top: 1rem;
-}
-.text-block ul li {
     margin-bottom: 0.5rem;
 }

@@ -1,5 +1,5 @@
 /* Medium screens */
-@media screen and (min-width: 641px) and (max-width: 1023px) {
+@media screen and (min-width: 641px) {
     #navMenu ul, footer, header {
         flex-direction: row;
         justify-content: space-evenly;
@@ -15,10 +15,7 @@
     .content-section {
         max-width: 700px;
     }
-    form { min-width: 500px; max-width: 800px; }
-    fieldset { max-width: 700px; }
-    label { max-width: 650px; }
-    .membership-cards { grid-template-columns: 1fr; }
+  
 
     /* Footer layout for medium screens */
     footer {
@@ -40,10 +37,6 @@
         grid-template-areas: "left socials right";
         align-items: center;
         text-align: initial;
-    }
-    .content-row {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "text image";
     }
     
 }
