@@ -45,7 +45,7 @@
     bottom: 20px;
     right: 10%;
 }
-.hero-text .cta {
+.cta {
     display: inline-flex;
     margin-top: 0.5rem;
     background: #0f5443;

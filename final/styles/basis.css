@@ -52,7 +52,7 @@ header {
 }
 
 /* Nav */
-#navMenu ul, ul {
+ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -60,21 +60,21 @@ header {
     padding: 0;
     margin-top: 0.5rem;
 }
-a:hover, .card button:focus,
-.card button:hover,
+a:hover, button:focus,
+button:hover,
 button[type=submit]:focus,
 button[type=submit]:hover {
     background-color: #00b3ff;
     color: #000;
     outline: 0;
 }
-#navMenu .active {
+.active {
     text-decoration: underline;
     text-underline-offset: 4px;
     font-weight: 700;
     color: #fff;
 }
-nav.hide {
+.hide {
     display: none !important;
 }
 

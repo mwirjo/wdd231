@@ -1,9 +1,8 @@
 /* Medium screens */
 @media screen and (min-width: 641px) {
-    #navMenu ul, footer, header {
+    #navMenu ul{
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
     }
     #menuBtn { display: none; }
     #navMenu { display: block !important; border-top: none; }
