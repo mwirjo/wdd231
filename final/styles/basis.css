@@ -32,11 +32,15 @@ header {
     padding: 1rem;
     background-color: #0f5443;
     color: #fff;
+    min-height: 9rem;
+    margin-bottom: 0.5rem;
+    font-weight:700;
+    font-size: large;
 }
 
 .logo {
     width: 50px;
-    height: 50px;
+    height: 45px;
 }
 #menuBtn {
     background: none;
@@ -84,7 +88,7 @@ main {
     margin-bottom: 1rem;
 }
 
-h1,h2,legend { font-weight:700; text-align:center; }
+h1,h2,legend {  font-weight:700; text-align:center; }
 
 /* Footer - default (mobile) */
 footer {

@@ -16,7 +16,7 @@
   <link rel="icon" href="images/favicon.ico">
 
   <!-- Preloads -->
-  <link rel="preload" as="image" href="images/hero.webp" type="image/webp">
+  <link rel="preload" as="image" href="images/pickup.webp" type="image/webp" width="300" height="300">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -37,6 +37,7 @@
   <!-- JavaScript -->
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
+  <script src="scripts/visit-message.js" defer></script>
   <script src="scripts/mechanics.js" defer></script>
 </head>
 <body>
@@ -47,15 +48,38 @@
     <nav id="navMenu" class="hide">
       <ul>
         <li><a href="index.html" >Home</a></li>
-        <li><a href="mechanics.html">Mechanics</a></li>
+        <li><a href="mechanics.html" class="active">Mechanics</a></li>
         <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="content-wrapper">
+    <section class="visit-info">
+      <p id="visit-message"></p>
+    </section>
     <h1 class="main-title">Mechanics</h1> <!-- Must NOT be inside .hero -->
+    <section class="demo-video">
+      <video
+        width="640" 
+        height="360" 
+        autoplay
+        muted
+        loop
+        controls
+        playsinline
+        preload="metadata"
+        poster="images/demo-thumbnail.webp"
+      >
+        <source src="videos/demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
 
+    <section id="features">
+    <h2>How Cybertron Works</h2>
+    <div class="discover-grid"></div>
+    </section>
   </main>
 
   <footer>

@@ -24,6 +24,9 @@
         align-items: center;
         text-align: center;
     }
+    .discover-grid {
+    grid-template-columns: repeat(2, 1fr); /* Medium: 2 cards per row */
+  }
 }
 
 /* Large screens */
@@ -38,5 +41,8 @@
         align-items: center;
         text-align: initial;
     }
+    .discover-grid {
+    grid-template-columns: repeat(3, 1fr); /* Large: 3 cards per row */
+  }
     
 }

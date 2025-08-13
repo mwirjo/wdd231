@@ -1,0 +1,20 @@
+[
+  { "title": "Automated delivery", "desc": "Cybertron gets items from the warehouse accurately and quickly.", "img": "images/pickup.webp", "info": "Step-by-step" },
+  { "title": "Letter Scanning", "desc": "Scan and identify products quickly based on letters.", "img": "images/letters.webp", "info": "Supports multiple formats" },
+  { "title": "Components Needed", "desc": "List of all parts required to build Cybertron.", "img": "images/components.webp", "info": "Includes sensors & motors" },
+  { "title": "Automated Sorting", "desc": "Cybertron sorts items accurately and quickly.", "img": "images/sorting.webp", "info": "Reduces human error" },
+  { "title": "Linetracking", "desc": "Self navigates on grid based on line tracking .", "img": "images/navigation.webp", "info": "Visual timelines" },
+  
+  { "title": "Bluetooth Control", "desc": "Manual bluetooth control for manual control emergencies .", "img": "images/bluetooth.webp", "info": "Responsive design" },
+  { "title": "Circuit Diagram", "desc": "Visual schematic of Cybertron's internal wiring.", "img": "images/circuit-diagram.webp", "info": "Electronics overview" },
+  { "title": "Inventory Tracking", "desc": "Track items automatically with precision.", "img": "images/inventory.webp", "info": "Realtime updates" },
+  
+  { "title": "Order Management", "desc": "Manage orders efficiently from start to finish.", "img": "images/orders.webp", "info": "Status alerts" },
+  
+  { "title": "Voice Commands", "desc": "Future feature: Control Cybertron hands-free using voice input.", "img": "images/voice.webp", "info": "Supports multiple languages" },
+  { "title": "Dashboard Overview", "desc": "See all your warehouse data in one place.", "img": "images/dashboard.webp", "info": "Interactive charts" },
+  { "title": "Shipment Notifications", "desc": "Automatic alerts Cybertron when orders have arrived.", "img": "images/shipment.webp", "info": "Email & SMS" },
+  { "title": "Sales Prediction", "desc": "Future feature: Analyzes selling patterns and predicts low stock.", "img": "images/prediction.webp", "info": "Real-time alerts" },
+  { "title": "Color scanning", "desc": "Future feature: scan the items and sort based on color", "img": "images/color.webp", "info": "Charts & graphs" },
+  { "title": "Maintenance Alerts", "desc": "Receive notifications when equipment needs attention.", "img": "images/maintenance.webp", "info": "Prevent downtime" }
+]
