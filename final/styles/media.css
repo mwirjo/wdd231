@@ -34,7 +34,7 @@
     .content-wrapper { max-width: 1000px; }
     .content-section { max-width: 1000px; }
     .discover-grid {
-    grid-template-columns: repeat(2, 1fr); /* Medium: 2 cards per row */
+    grid-template-columns: repeat(3, 1fr); /* Medium: 2 cards per row */
   }
     
 }
