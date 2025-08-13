@@ -123,9 +123,5 @@ footer {
     filter: none;
 }
 
-#year, #lastModified {
-    display: inline-block;
-    min-width: 5ch;
-    white-space: nowrap;
-}
+
 
