@@ -41,5 +41,9 @@
         align-items: center;
         text-align: initial;
     }
+    .content-row {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "text image";
+    }
     
 }

@@ -1,1 +1,98 @@
-.card,h1{text-align:center}.card h2,h1,legend{font-weight:700}.card button,button[type=submit]{background-color:#046;transition:background-color .3s,color .3s;cursor:pointer}#benefitsModal,.card{padding:1rem;opacity:0}h1{max-height:40px;margin:1rem 0;font-size:1.8rem}form{display:flex;flex-direction:column;padding:1rem;max-width:700px;min-width:320px;width:90vw;margin:0 auto;background:#fff;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,.1)}fieldset{border:3px solid #046;margin-bottom:1.5rem;border-radius:4px;width:100%;max-width:650px;min-height:300px;padding:1rem;background:#fefefe}legend{padding:0 .5rem}label{display:block;margin-bottom:1rem;max-width:600px;width:100%;font-weight:600}input[type=email],input[type=tel],input[type=text],textarea{width:100%;padding:.5rem;border:1px solid #000;border-radius:5px;font-size:1rem;font-family:inherit}textarea{resize:vertical;min-height:80px}input:required:invalid,textarea:required:invalid{border:2px solid #ff4d4d}input:required:valid,textarea:required:valid{border:2px solid #3c3}button[type=submit]{align-self:center;color:#fff;padding:.75rem 1.5rem;font-size:1rem;border-radius:5px;border:none;margin-top:1rem;font-weight:700}.card button:focus,.card button:hover,button[type=submit]:focus,button[type=submit]:hover{background-color:#00b3ff;color:#000;outline:0}.membership{display:flex;flex-direction:column;gap:2rem}.membership-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;min-height:420px}.card{animation:.6s forwards fadeInOpacity;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,.18);min-width:200px;background-color:#f0f9ff;user-select:none;cursor:default}.card:first-child{animation-delay:0s}.card:nth-child(2){animation-delay:.2s}.card:nth-child(3){animation-delay:.4s}.card:nth-child(4){animation-delay:.6s}.card h2{margin-bottom:.5rem;font-size:1.25rem;color:#046}.card button{color:#fff;padding:1rem;margin-top:.5rem;border-radius:5px;border:none;font-weight:600}#benefitsModal{box-sizing:border-box;width:300px;max-width:80vw;border:none;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.25);font-family:sans-serif;visibility:hidden;transform:translateY(-10px);transition:opacity .3s,transform .3s,visibility .3s}#benefitsModal[open]{opacity:1;visibility:visible;transform:translateY(0)}#benefitsModal button:focus,#benefitsModal button:hover,#closeModal:focus,#closeModal:hover{background-color:#00b3ff;color:#000;cursor:pointer;outline:0;padding:10px}dialog::backdrop{background:rgba(0,0,0,.3)}@keyframes fadeInOpacity{to{opacity:1}}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+fieldset {
+    border: 2px solid #0f5443;
+    padding: 1rem;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+input, textarea {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.membership-radios label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;  /* vertically center the radio */
+  gap: 0.5rem;          /* space between radio and text */
+  cursor: pointer;       /* pointer when hovering over label */
+}
+
+
+/* Membership Cards */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.membership-cards .card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+}
+.card { 
+  padding:1rem;
+  border-radius:10px;
+  box-shadow:0 4px 8px rgba(0,0,0,.18);
+  min-width:200px;
+  background-color:#f0f9ff;
+  user-select:none;
+  cursor:default;
+  animation:.6s forwards fadeInOpacity;
+}
+.card button, button[type=submit] {
+  background-color:#0f5443;
+  color:#fff;
+  padding:.75rem 1rem;
+  border-radius:5px;
+  border:none;
+  font-weight:600;
+  cursor:pointer;
+  transition: background-color .3s, color .3s;
+}
+#benefitsModal {
+  box-sizing:border-box;
+  width:300px;
+  max-width:80vw;
+  border:none;
+  border-radius:8px;
+  box-shadow:0 0 10px rgba(0,0,0,.25);
+  font-family:sans-serif;
+  visibility:hidden;
+  transform:translateY(-10px);
+  transition:opacity .3s,transform .3s,visibility .3s;
+}
+#benefitsModal[open] {
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+.card button:focus,
+.card button:hover,
+button[type=submit]:focus,
+button[type=submit]:hover {
+    background-color: #00b3ff;
+    color: #000;
+    outline: 0;
+}
+/* Red border for required fields that are empty or invalid */
+input:required:invalid,
+textarea:required:invalid {
+  border: 2px solid #ff4d4d; /* red */
+}
+
+/* Green border for valid required fields */
+input:required:valid,
+textarea:required:valid {
+  border: 2px solid #3c3; /* green */
+}
