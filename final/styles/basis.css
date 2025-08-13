@@ -52,7 +52,7 @@ header {
 }
 
 /* Nav */
-#navMenu ul {
+#navMenu ul, ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -81,14 +81,9 @@ main {
     min-height: 60vh;
     padding: 1rem;
 }
-.main-title {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
 
-h1,h2,legend {  font-weight:700; text-align:center; }
+
+h1,h2,legend {  margin-bottom: 1rem; font-weight:700; text-align:center; }
 
 /* Footer - default (mobile) */
 footer {
@@ -134,8 +129,3 @@ footer {
     white-space: nowrap;
 }
 
- ul {
-    list-style: none;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
